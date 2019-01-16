@@ -1,0 +1,1 @@
+include ':app', ':compound_view'

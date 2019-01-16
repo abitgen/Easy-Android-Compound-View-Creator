@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageTextView">
+        <attr name="image_src" format="reference"/>
+        <attr name="text_str" format="string"/>
+        <attr name="bg_color">
+            <enum name="white" value="0"/>
+            <enum name="translucent" value="1"/>
+            <enum name="black" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>
