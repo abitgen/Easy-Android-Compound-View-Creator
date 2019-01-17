@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="ImageTextView">
+    <declare-styleable name="ImageTextViewSet">
         <attr name="image_src" format="reference"/>
+        <attr name="image_crossfade" format="boolean"/>
         <attr name="text_str" format="string"/>
+        <attr name="android:textColor"/>
         <attr name="bg_color">
             <enum name="white" value="0"/>
             <enum name="translucent" value="1"/>

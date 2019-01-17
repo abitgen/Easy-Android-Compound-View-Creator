@@ -2,6 +2,7 @@ package com.abinandhan.basecompoundview
 
 import android.content.Context
 import android.util.AttributeSet
+import android.view.View
 import com.google.android.material.card.MaterialCardView
 
 abstract class MaterialCardViewCompoundViewBuilder<T>(context: Context, open val attrs:AttributeSet) :

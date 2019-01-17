@@ -8,12 +8,50 @@
     tools:context=".MainActivity">
 
     <com.abinandhan.extendedviews.imagetextview.ImageTextView
-        android:layout_width="80dp"
-        android:layout_height="120dp"
-        app:text_str="Hello World!"
-        app:image_src="@drawable/nature"
+        android:id="@+id/itvWhoIsTHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:text_str="Who is there?"
+        app:image_src="@drawable/ic_launcher_foreground"
+        android:textColor="@color/colorPrimary"
         app:bg_color="translucent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.abinandhan.extendedviews.imagetextview.ImageTextViewSet
+        android:id="@+id/itvello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:text_str="Hello Apple!"
+        app:image_src="@drawable/ic_happy"
+        android:textColor="@color/colorAccent"
+        app:bg_color="translucent"
+        app:layout_constraintStart_toEndOf="@id/itvWhoIsTHere"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.abinandhan.extendedviews.imagetextview.ImageTextViewSet
+        android:id="@+id/itvCanyouComeClose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:text_str="What?? Are you real?"
+        app:image_src="@drawable/ic_robot"
+        android:textColor="@color/colorPrimaryDark"
+        app:bg_color="white"
+        app:layout_constraintStart_toEndOf="@id/itvello"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.abinandhan.extendedviews.imagetextview.ImageTextViewSet
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/colorAccent"
+        app:bg_color="black"
+        app:image_src="@drawable/android_loves_apple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/itvello"
+        app:layout_constraintTop_toBottomOf="@id/itvCanyouComeClose"
+        app:text_str="And we are doomed to follow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
